@@ -1,0 +1,39 @@
+   <!DOCTYPE html>
+   <html lang="en-us">
+                <head>
+                    <meta charset="uft-8">  
+                    <title>Calculate the number of stacks</title>
+                    <script>
+                
+                     function calculate_Stacks(){
+
+                           let totalBox = parseInt(document.getElementById("inputTotBox").value);                         
+                           let boxInEachStack = parseInt(document.getElementById("inputStack").value);
+
+                           let numOfStacks = Math.ceil(totalBox/boxInEachStack);
+                           
+                           document.getElementById("outputNumOfStacks").innerHTML = numOfStacks;
+                     }
+                        
+                    </script>
+                
+                </head>
+                <body>
+                    Total Boxes <input type = "text" id = "inputTotBox"> <br>
+                    Boxes in each stack <input type = "text" id = "inputStack"><br>
+                    <button type="button" onclick="calculate_Stacks()">Number of stacks</button>
+                    <div id="outputNumOfStacks"></div>
+                </body>
+                </html>
+
+
+
+<!-- table
+input:- The total boxes from the user.
+        Boxes in each stack from the user.
+
+process:- calculate the number of stacks.
+
+output:- display or save to database the number of stacks.
+
+-->

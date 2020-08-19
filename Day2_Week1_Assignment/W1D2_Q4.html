@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+             <head>
+                 <meta charset="uft-8">  
+                 <title>Creat team members</title>
+                 <script>
+             
+             function createTeam(){
+              let student = parseInt (document.getElementById("student").value);
+              let num_team = parseInt(document.getElementById("team").value);
+
+              let remain = student % num_team;
+              let members =(student - remain)/num_team;
+              let expected_team = num_team - remain;
+              let extraStudent = members + 1;
+              
+              let output = remain + " teams with "+ extraStudent +" members and "+ expected_team+" teams with "+members+" members."
+              document.getElementById("output").innerHTML = output;
+          }
+                  
+                     
+                 </script>
+             
+             </head>
+             <body>
+                 Number of students <input type = "text" id = "student"> <br>
+                 Number of teams <input type = "text" id = "team"><br>
+                 <button type="button" onclick="createTeam()">Teams</button>
+                 <div id="output"></div>
+             </body>
+             </html>
+
+
+<!-- table  
+     input:- The number of Student and the number of team from the user.
+
+     process:- calculate remain student and calculate expected members in each team
+     and calculate expected team for equal number of student and add one to extra student.
+
+     output:- display output .
+-->
