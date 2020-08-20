@@ -3,7 +3,7 @@ const prompt = require('prompt-sync')();
 
 
 let stud_name = prompt("Please enter your name ");
-let credits = prompt("Enter completed credits ");
+let credits = parseInt(prompt("Enter completed credits "));
 let year;
 
 if(credits < 30){
