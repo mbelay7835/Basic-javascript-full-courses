@@ -2,7 +2,7 @@
 const prompt = require('prompt-sync')();
 
 
-let cost = prompt("Please enter cost of the house ");
+let cost = parseFloat(prompt("Please enter cost of the house "));
 let down_pay;
 
 if(cost < 50000){
